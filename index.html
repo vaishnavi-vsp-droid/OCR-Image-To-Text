@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image to Text OCR</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Image to Text OCR</h1>
+            <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <input type="file" name="image" accept=".jpg, .jpeg, .png" required>
+                </div>
+                <div class="input-group">
+                    <input type="submit" value="Upload and Convert">
+                </div>
+            </form>
+            <div id="loading" class="spinner">
+                <img src="{{ url_for('static', filename='img/spinner.gif') }}" alt="Loading...">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
