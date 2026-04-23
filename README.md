@@ -23,7 +23,5 @@ On the application will be running on your local port !!
 </div>
 
 
-## License
 
-[Ansh Tripathi 2024](https://choosealicense.com/licenses/mit/)
 
